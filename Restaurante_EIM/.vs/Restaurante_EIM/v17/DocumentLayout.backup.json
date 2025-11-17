@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\IPCA\\PO\\Restaurante_EIM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\menus\\empregadomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\menus\\empregadomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\services\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|e:\\ipca\\po\\restaurante_eim\\restaurante_eim\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\menus\\balcaomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\menus\\balcaomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\menus\\gestormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\menus\\gestormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\users\\empregadobalcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\users\\empregadobalcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\users\\empregadomesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\users\\empregadomesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\users\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\users\\gestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|E:\\IPCA\\PO\\Restaurante_EIM\\restaurante_eim\\users\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF986A3-1D3A-4902-9546-87C08A87DE20}|Restaurante_EIM\\Restaurante_EIM.csproj|solutionrelative:restaurante_eim\\users\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\PedidoService.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Services\\PedidoService.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\PedidoService.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Services\\PedidoService.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:49:13.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\Pedido.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Pedido.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\Pedido.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:19:10.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\Reserva.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Reserva.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\Reserva.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:00:04.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpregadoMenu.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\EmpregadoMenu.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Menus\\EmpregadoMenu.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\EmpregadoMenu.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Menus\\EmpregadoMenu.cs",
+              "ViewState": "AgIAACsBAAAAAAAAAAAwwDcBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:51:26.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BalcaoMenu.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\BalcaoMenu.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Menus\\BalcaoMenu.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\BalcaoMenu.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Menus\\BalcaoMenu.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAwwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:52:31.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\Enums.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Enums.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\Enums.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:42:21.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservaService.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\ReservaService.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Services\\ReservaService.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\ReservaService.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Services\\ReservaService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAwwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:47:35.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Mesa.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\Mesa.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Mesa.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\Mesa.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:14:07.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemPedido.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\ItemPedido.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\ItemPedido.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\ItemPedido.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\ItemPedido.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA9wCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:29:47.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Item.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Models\\Item.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Models\\Item.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Models\\Item.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:17:23.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GestorMenu.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\GestorMenu.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Menus\\GestorMenu.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Menus\\GestorMenu.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Menus\\GestorMenu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:59:37.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Services\\UserService.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Services\\UserService.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Services\\UserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:04:26.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Program.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Program.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Program.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:08:56.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmpregadoMesa.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\EmpregadoMesa.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Users\\EmpregadoMesa.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\EmpregadoMesa.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Users\\EmpregadoMesa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:35:29.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmpregadoBalcao.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\EmpregadoBalcao.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Users\\EmpregadoBalcao.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\EmpregadoBalcao.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Users\\EmpregadoBalcao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:36:00.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Gestor.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\Gestor.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Users\\Gestor.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\Gestor.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Users\\Gestor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:59:26.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Utilizador.cs",
+              "DocumentMoniker": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\Utilizador.cs",
+              "RelativeDocumentMoniker": "Restaurante_EIM\\Users\\Utilizador.cs",
+              "ToolTip": "E:\\IPCA\\PO\\Restaurante_EIM\\Restaurante_EIM\\Users\\Utilizador.cs",
+              "RelativeToolTip": "Restaurante_EIM\\Users\\Utilizador.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T11:10:17.32Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

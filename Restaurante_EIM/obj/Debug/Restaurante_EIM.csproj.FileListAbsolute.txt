@@ -1,0 +1,7 @@
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\obj\Debug\Restaurante_EIM.csproj.AssemblyReference.cache
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\obj\Debug\Restaurante_EIM.csproj.CoreCompileInputs.cache
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\bin\Debug\Restaurante_EIM.exe.config
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\bin\Debug\Restaurante_EIM.exe
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\bin\Debug\Restaurante_EIM.pdb
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\obj\Debug\Restaurante_EIM.exe
+E:\IPCA\PO\Restaurante_EIM\Restaurante_EIM\obj\Debug\Restaurante_EIM.pdb
