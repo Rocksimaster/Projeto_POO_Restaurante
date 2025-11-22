@@ -13,6 +13,7 @@ namespace Restaurante_EIM.Services
         {
             _utilizadores = new List<Utilizador>();
             _utilizadores.Add(new Gestor(_proximoId++, "Gestor Admin", "admin", "123"));
+            _utilizadores.Add(new EmpregadoBalcao(_proximoId, "Maria", "maria", "123"));
         }
 
         public Utilizador Autenticar(string username, string password)

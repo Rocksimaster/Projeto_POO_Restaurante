@@ -11,6 +11,7 @@ namespace Restaurante_EIM.Models
         private string nomeCliente;
         private int numPessoas;
         private EstadoReserva estado;
+        private string contacto;
 
         public int Id
         {
@@ -46,6 +47,12 @@ namespace Restaurante_EIM.Models
         {
             get { return estado; }
             internal set { estado = value; }
+        }
+
+        public string Contacto
+        {
+            get { return contacto; }
+            set {  contacto = value; }
         }
 
         public Reserva(int idInicial)

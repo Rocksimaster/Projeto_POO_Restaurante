@@ -84,6 +84,9 @@ namespace Restaurante_EIM.Menus
             Console.Write("Nome do Cliente: ");
             string nomeCliente = Console.ReadLine();
 
+            Console.Write("Contacto do cliente: ");
+            string contacto = Console.ReadLine();
+
             Console.Write("Número de Pessoas: ");
             if (!int.TryParse(Console.ReadLine(), out int numPessoas) || numPessoas <= 0)
             {
@@ -100,7 +103,7 @@ namespace Restaurante_EIM.Menus
                 return;
             }
 
-            if (service.AdicionarReserva(dataHora, numPessoas, nomeCliente))
+            if (service.AdicionarReserva(dataHora, numPessoas, nomeCliente, contacto))
             {
                 Console.WriteLine("\nReserva adicionada com sucesso e mesa reservada!");
             }
@@ -130,7 +133,7 @@ namespace Restaurante_EIM.Menus
                 foreach (var r in reservas)
                 {
                     string tempo = r.CalcularAntecedencia().TotalHours > 0 ? "Futuro" : "Passado";
-                    Console.WriteLine($"ID: {r.Id} | Cliente: {r.NomeCliente,-20} | Pessoas: {r.NumPessoas} | Data: {r.DataHora:dd/MM HH:mm} | Estado: {r.Estado} ({tempo})");
+                    Console.WriteLine($"ID: {r.Id} | Nome Cliente: {r.NomeCliente,-20} | Contacto Cliente: {r.Contacto} | Pessoas: {r.NumPessoas} | Data: {r.DataHora:dd/MM HH:mm} | Estado: {r.Estado} ({tempo})");
                 }
             }
             Console.ReadKey();

@@ -23,7 +23,7 @@ namespace Restaurante_EIM.Services
             _mesas.Add(new Mesa(103, 2));
         }
 
-        public bool AdicionarReserva(DateTime dataHora, int numPessoas, string nomeCliente)
+        public bool AdicionarReserva(DateTime dataHora, int numPessoas, string nomeCliente, string contacto)
         {
             TimeSpan antecedencia = dataHora.Subtract(DateTime.Now);
             if (antecedencia.TotalHours < 2) return false;
@@ -51,6 +51,7 @@ namespace Restaurante_EIM.Services
             novaReserva.NumeroMesa = mesaDisponivel.Id;
             novaReserva.NomeCliente = nomeCliente;
             novaReserva.NumPessoas = numPessoas;
+            novaReserva.Contacto = contacto;
 
             _reservas.Add(novaReserva);
             mesaDisponivel.Estado = EstadoMesa.Reservada;
