@@ -1,6 +1,7 @@
-﻿using Restaurante_EIM.Services;
+﻿using Restaurante_EIM.Menus;
+using Restaurante_EIM.Models;
+using Restaurante_EIM.Services;
 using Restaurante_EIM.Users;
-using Restaurante_EIM.Menus;
 using System;
 
 namespace Restaurante_EIM
@@ -10,6 +11,7 @@ namespace Restaurante_EIM
         private static UserService _userService = new UserService();
         private static ReservaService _reservaService = new ReservaService();
         private static PedidoService _pedidoService = new PedidoService();
+        private static Ementa _ementa = new Ementa();
 
         static void Main(string[] args)
         {
@@ -73,7 +75,7 @@ namespace Restaurante_EIM
             switch (u.GetPapel())
             {
                 case "Gestor":
-                    GestorMenu.MostrarMenu(_userService, _reservaService, _pedidoService, u as Gestor);
+                    GestorMenu.MostrarMenu(_userService, _reservaService, _pedidoService, u as Gestor, _ementa);
                     break;
                 case "Empregado de Mesa":
                     EmpregadoMenu.MostrarMenu(_pedidoService, _reservaService);

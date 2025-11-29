@@ -1,4 +1,5 @@
-﻿using Restaurante_EIM.Services;
+﻿using Restaurante_EIM.Models;
+using Restaurante_EIM.Services;
 using Restaurante_EIM.Users;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,8 @@ namespace Restaurante_EIM.Menus
             UserService userService,
             ReservaService reservaService,
             PedidoService pedidoService,
-            Gestor gestor)
+            Gestor gestor, 
+            Ementa ementa)
         {
             bool aSair = false;
 
@@ -25,7 +27,9 @@ namespace Restaurante_EIM.Menus
                 Console.WriteLine("1. Gerir Funcionários (Adicionar/Listar)");
                 Console.WriteLine("2. Cancelar Reserva ");
                 Console.WriteLine("3. Cancelar Pedido ");
-                Console.WriteLine("4. Voltar ao Login ");
+                Console.WriteLine("4. Adicionar Item ");
+                Console.WriteLine("5. Remover Item ");
+                Console.WriteLine("6. Voltar ao Login ");
                 Console.Write("Escolha uma opção: ");
 
                 string input = Console.ReadLine();
@@ -42,6 +46,11 @@ namespace Restaurante_EIM.Menus
                         CancelarPedido(pedidoService);
                         break;
                     case "4":
+                        AdicionarItemEmenta(ementa);
+                        break;
+                    case "5":
+                        break;
+                    case "6":
                         aSair = true;
                         break;
                     default:
@@ -162,7 +171,17 @@ namespace Restaurante_EIM.Menus
             }
             Console.ReadKey();
         }
-
+        private static void AdicionarItemEmenta(Ementa ementa)
+        {
+            Console.Clear();
+            Console.WriteLine("--- ADICIONAR ITEM ---");
+            Console.WriteLine(" Introduza o nome do item: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine(" Introduza o preço do item: ");
+            double preco = Convert.ToDouble(Console.ReadLine());
+            Item item1 = new Item(nome, preco);
+            ementa.AdicionarItem(item1);
+        }
         private static void CancelarPedido(PedidoService service)
         {
             Console.Clear();

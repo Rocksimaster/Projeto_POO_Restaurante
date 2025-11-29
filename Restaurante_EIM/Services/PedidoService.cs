@@ -29,9 +29,9 @@ namespace Restaurante_EIM.Services
 
         private void InicializarEmenta()
         {
-            _ementa.Add(new Item(201, "Sopa do Dia", 2.50));
-            _ementa.Add(new Item(202, "Prato Principal", 10.00));
-            _ementa.Add(new Item(301, "Refrigerante", 1.80));
+            _ementa.Add(new Item("Sopa do Dia", 2.50));
+            _ementa.Add(new Item("Prato Principal", 10.00));
+            _ementa.Add(new Item("Refrigerante", 1.80));
         }
 
         public bool RemoverItemDoPedido(int pedidoId, int itemId)

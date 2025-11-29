@@ -5,6 +5,7 @@
         private int id;
         private string nome;
         private double preco;
+        private int _proximoIdItem = 1;
 
         public int Id
         {
@@ -24,15 +25,18 @@
             set { preco = value; }
         }
 
-        public Item(int id, string nome, double preco)
+        public Item(string nome, double preco)
         {
-            this.id = id;
+            this.id = _proximoIdItem++;
             this.nome = nome;
             this.preco = preco;
         }
 
+
+
         public void AtualizarPreço()
         {
+
 
         }
     }
