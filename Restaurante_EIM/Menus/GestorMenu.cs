@@ -49,6 +49,7 @@ namespace Restaurante_EIM.Menus
                         AdicionarItemEmenta(ementa);
                         break;
                     case "5":
+                        RemoverItemEmenta(ementa);
                         break;
                     case "6":
                         aSair = true;
@@ -181,6 +182,19 @@ namespace Restaurante_EIM.Menus
             double preco = Convert.ToDouble(Console.ReadLine());
             Item item1 = new Item(nome, preco);
             ementa.AdicionarItem(item1);
+        }
+
+        private static void RemoverItemEmenta(Ementa ementa)
+        {
+            Console.Clear();
+            Console.WriteLine("--- Remover Item ---");
+            Console.WriteLine("Introduza o nome do item: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Introduza o preço do item: ");
+            double preco = Convert.ToDouble(Console.ReadLine());
+            Item item2 = new Item(nome, preco);
+            ementa.RemoverItem(item2);
+
         }
         private static void CancelarPedido(PedidoService service)
         {
