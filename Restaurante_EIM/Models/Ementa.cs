@@ -14,14 +14,21 @@ namespace Restaurante_EIM.Models
         {
             items = new List<Item>();
         }
-        public void AdicionarItem(Item item)
+        public void AdicionarItemEmenta(Item item)
         {
             items.Add(item);
         }
 
-        public void RemoverItem(Item item) 
-        { 
-             items.Remove(item);
+        public bool RemoverItemEmenta(int itemId) 
+        {
+           Item item2 = items.FirstOrDefault(i => i.Id == itemId);
+            if (item2 != null)
+            {
+                items.Remove(item2);
+                return true;
+            }
+            return false;
+
         }
 
         public List<Item> ConsultarEmenta()

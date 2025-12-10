@@ -27,8 +27,8 @@ namespace Restaurante_EIM.Menus
                 Console.WriteLine("1. Gerir Funcionários (Adicionar/Listar)");
                 Console.WriteLine("2. Cancelar Reserva ");
                 Console.WriteLine("3. Cancelar Pedido ");
-                Console.WriteLine("4. Adicionar Item ");
-                Console.WriteLine("5. Remover Item ");
+                Console.WriteLine("4. Adicionar Item Ementa ");
+                Console.WriteLine("5. Remover Item Ementa ");
                 Console.WriteLine("6. Voltar ao Login ");
                 Console.Write("Escolha uma opção: ");
 
@@ -181,20 +181,35 @@ namespace Restaurante_EIM.Menus
             Console.WriteLine(" Introduza o preço do item: ");
             double preco = Convert.ToDouble(Console.ReadLine());
             Item item1 = new Item(nome, preco);
-            ementa.AdicionarItem(item1);
+            ementa.AdicionarItemEmenta(item1);
+            Console.WriteLine("\n✅ Item adicionado à ementa com sucesso.");
+            Console.ReadKey();
         }
 
         private static void RemoverItemEmenta(Ementa ementa)
         {
             Console.Clear();
             Console.WriteLine("--- Remover Item ---");
-            Console.WriteLine("Introduza o nome do item: ");
-            string nome = Console.ReadLine();
-            Console.WriteLine("Introduza o preço do item: ");
-            double preco = Convert.ToDouble(Console.ReadLine());
-            Item item2 = new Item(nome, preco);
-            ementa.RemoverItem(item2);
+            Console.WriteLine("Introduza o id do item: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            bool sucesso = ementa.RemoverItemEmenta(id);
+            if (sucesso == true)
+            {
+                Console.WriteLine("\n✅ Item removido da ementa com sucesso.");
+            }
+            else
+            {
+                Console.WriteLine("\n❌ Erro: Item não encontrado.");
+            }
+            Console.ReadKey();
 
+        }
+
+        private static void ConsultarEmenta(Ementa ementa)
+        {
+            Console.Clear();
+
+            Console.WriteLine($"ID: {u.Id} | Nome: {u.Nome,-20} | Username: {u.Username,-10} | Papel: {u.GetPapel()}");
         }
         private static void CancelarPedido(PedidoService service)
         {

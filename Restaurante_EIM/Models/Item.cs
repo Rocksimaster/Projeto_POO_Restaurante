@@ -5,7 +5,7 @@
         private int id;
         private string nome;
         private double preco;
-        private int _proximoIdItem = 1;
+        private int _proximoIdItem = 0;
 
         public int Id
         {
