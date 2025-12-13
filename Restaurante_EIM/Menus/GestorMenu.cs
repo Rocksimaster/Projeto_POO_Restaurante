@@ -29,7 +29,8 @@ namespace Restaurante_EIM.Menus
                 Console.WriteLine("3. Cancelar Pedido ");
                 Console.WriteLine("4. Adicionar Item Ementa ");
                 Console.WriteLine("5. Remover Item Ementa ");
-                Console.WriteLine("6. Voltar ao Login ");
+                Console.WriteLine("6. Consultar Ementa ");
+                Console.WriteLine("7. Voltar ao Login ");
                 Console.Write("Escolha uma opção: ");
 
                 string input = Console.ReadLine();
@@ -52,6 +53,9 @@ namespace Restaurante_EIM.Menus
                         RemoverItemEmenta(ementa);
                         break;
                     case "6":
+                        ConsultarEmenta(ementa);
+                        break;
+                    case "7":
                         aSair = true;
                         break;
                     default:
@@ -208,8 +212,21 @@ namespace Restaurante_EIM.Menus
         private static void ConsultarEmenta(Ementa ementa)
         {
             Console.Clear();
-
-            Console.WriteLine($"ID: {u.Id} | Nome: {u.Nome,-20} | Username: {u.Username,-10} | Papel: {u.GetPapel()}");
+            Console.WriteLine("--- CONSULTAR EMENTA ---");
+            List<Item> ementa1 = ementa.ConsultarEmenta();
+            Console.WriteLine("Ementa disponível: ");
+            if (ementa1.Count == 0)
+            {
+                Console.WriteLine("⚠️ A ementa não tem items.");
+            }
+            else
+            {
+                foreach (var item in ementa1)
+                {
+                    Console.WriteLine($"Item: {item.Nome} - Preço: {item.Preco}");
+                }
+            }
+            Console.ReadKey();
         }
         private static void CancelarPedido(PedidoService service)
         {
