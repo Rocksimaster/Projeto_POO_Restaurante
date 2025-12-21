@@ -52,6 +52,7 @@
     <Compile Include="Models\ItemPedido.cs" />
     <Compile Include="Models\Mesa.cs" />
     <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\RelatorioMensal.cs" />
     <Compile Include="Models\Reserva.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

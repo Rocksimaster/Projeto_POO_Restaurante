@@ -1,4 +1,5 @@
 ﻿using Restaurante_EIM.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,12 +8,15 @@ namespace Restaurante_EIM.Models
     public class Pedido
     {
         private int id;
+        private DateTime dataHora;
         private List<ItemPedido> items;
         private EstadoPedido estado;
         private double totalPagar;
         private int numeroMesa;
 
         public int Id { get; private set; }
+
+        public DateTime DataHora { get; private set; }
         public List<ItemPedido> Items { get; private set; }
         public EstadoPedido Estado { get; set; }
         public double TotalPagar { get; private set; }
@@ -22,6 +26,7 @@ namespace Restaurante_EIM.Models
         public Pedido(int id)
         {
             this.Id = id;
+            this.dataHora = DateTime.Now;
             this.Items = new List<ItemPedido>();
             this.Estado = EstadoPedido.Aberto;
             this.TotalPagar = 0;

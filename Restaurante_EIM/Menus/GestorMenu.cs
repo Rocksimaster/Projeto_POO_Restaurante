@@ -30,7 +30,8 @@ namespace Restaurante_EIM.Menus
                 Console.WriteLine("4. Adicionar Item Ementa ");
                 Console.WriteLine("5. Remover Item Ementa ");
                 Console.WriteLine("6. Consultar Ementa ");
-                Console.WriteLine("7. Voltar ao Login ");
+                Console.WriteLine("7. Consultar Relatorio Mensal");
+                Console.WriteLine("8. Voltar ao Login ");
                 Console.Write("Escolha uma opção: ");
 
                 string input = Console.ReadLine();
@@ -56,6 +57,9 @@ namespace Restaurante_EIM.Menus
                         ConsultarEmenta(ementa);
                         break;
                     case "7":
+                        ConsultarRelatorioMensal(reservaService, pedidoService);
+                        break;
+                    case "8":
                         aSair = true;
                         break;
                     default:
@@ -249,6 +253,27 @@ namespace Restaurante_EIM.Menus
             else
             {
                 Console.WriteLine("ID inválido.");
+            }
+            Console.ReadKey();
+        }
+
+        public static void ConsultarRelatorioMensal(ReservaService reservaService, PedidoService pedidoService)
+        {
+            
+           List<Reserva> reservas = reservaService.ListarReservas();
+            List<Pedido> pedidos = pedidoService.ObterTodosPedidos();
+            RelatorioMensal relatorio = new RelatorioMensal(reservas, pedidos);
+            List<Reserva> reservasMensais = relatorio.ReservasMensais();
+            List<Pedido> pedidosMensais = relatorio.PedidosMensais();
+            Console.WriteLine("--- RESERVAS MENSAIS ---");
+            foreach (Reserva r in reservasMensais)
+            {
+                Console.WriteLine($"ID: {r.Id} | Nome Cliente: {r.NomeCliente,-20} | Contacto Cliente: {r.Contacto} | Pessoas: {r.NumPessoas} | Data: {r.DataHora:dd/MM HH:mm} | Estado: {r.Estado}");
+            }
+            Console.WriteLine("--- PEDIDOS MENSAIS ---");
+            foreach(Pedido p in pedidos)
+            {
+                Console.WriteLine($"ID: {p.Id} | Mesa: {p.NumeroMesa} | Total: {p.TotalPagar:C} | Estado: {p.Estado}");
             }
             Console.ReadKey();
         }
