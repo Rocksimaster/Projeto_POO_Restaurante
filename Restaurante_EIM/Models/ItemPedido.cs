@@ -1,13 +1,16 @@
 ﻿using Restaurante_EIM.Models;
+using System.Dynamic;
 
 namespace Restaurante_EIM.Models
 {
     public class ItemPedido
     {
+
         private Item item;
         private int quantidade;
         private double precoUnitario;
 
+        
         public Item Item
         {
             get { return item; }

@@ -217,7 +217,7 @@ namespace Restaurante_EIM.Menus
         {
             Console.Clear();
             Console.WriteLine("--- CONSULTAR EMENTA ---");
-            List<Item> ementa1 = ementa.ConsultarEmenta();
+            var ementa1 = ementa.ConsultarEmenta();
             Console.WriteLine("Ementa disponível: ");
             if (ementa1.Count == 0)
             {

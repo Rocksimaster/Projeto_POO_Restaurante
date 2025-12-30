@@ -8,7 +8,7 @@ namespace Restaurante_EIM.Menus
 {
     public static class EmpregadoMenu
     {
-        public static void MostrarMenu(PedidoService pedidoService, ReservaService reservaService)
+        public static void MostrarMenu(PedidoService pedidoService, ReservaService reservaService, Ementa ementa)
         {
             bool aSair = false;
 
@@ -35,10 +35,10 @@ namespace Restaurante_EIM.Menus
                         AbrirNovoPedido(pedidoService, reservaService);
                         break;
                     case "2":
-                        VisualizarEmenta(pedidoService);
+                        VisualizarEmenta(ementa);
                         break;
                     case "3":
-                        AdicionarItens(pedidoService);
+                        AdicionarItens(pedidoService, ementa);
                         break;
                     case "4":
                         RemoverItens(pedidoService);
@@ -104,14 +104,14 @@ namespace Restaurante_EIM.Menus
             Console.ReadKey();
         }
 
-        private static void VisualizarEmenta(PedidoService service)
+        private static void VisualizarEmenta(Ementa ementa)
         {
             Console.Clear();
             Console.WriteLine("--- EMENTA DO RESTAURANTE ---");
 
-            List<Item> ementa = service.ObterEmenta();
+            var items = ementa.ConsultarEmenta();
 
-            if (!ementa.Any())
+            if (!items.Any())
             {
                 Console.WriteLine("A ementa está vazia.");
             }
@@ -119,7 +119,7 @@ namespace Restaurante_EIM.Menus
             {
                 Console.WriteLine("ID | Nome                       | Preço");
                 Console.WriteLine("---|----------------------------|------");
-                foreach (var item in ementa)
+                foreach (var item in items)
                 {
                     Console.WriteLine($"{item.Id,-2} | {item.Nome,-26} | {item.Preco:C}");
                 }
@@ -128,7 +128,7 @@ namespace Restaurante_EIM.Menus
             Console.ReadKey();
         }
 
-        private static void AdicionarItens(PedidoService pedidoService)
+        private static void AdicionarItens(PedidoService pedidoService, Ementa ementa)
         {
             Console.Clear();
             Console.WriteLine("--- ADICIONAR ITENS AO PEDIDO ---");
@@ -151,7 +151,7 @@ namespace Restaurante_EIM.Menus
             }
 
             Console.WriteLine($"\n--- Ementa do Restaurante (Pedido ID: {pedido.Id}) ---");
-            VisualizarEmenta(pedidoService);
+            VisualizarEmenta(ementa);
 
             bool adicionarMais = true;
             while (adicionarMais)

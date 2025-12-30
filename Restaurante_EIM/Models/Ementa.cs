@@ -8,32 +8,37 @@ namespace Restaurante_EIM.Models
 {
     public class Ementa
     {
-        private List<Item> items;
+        private List<Item> _items;
 
         public Ementa()
         {
-            items = new List<Item>();
+            _items = new List<Item>();
         }
         public void AdicionarItemEmenta(Item item)
         {
-            items.Add(item);
+            _items.Add(item);
         }
 
         public bool RemoverItemEmenta(int itemId) 
         {
-           Item item2 = items.FirstOrDefault(i => i.Id == itemId);
+           Item item2 = _items.FirstOrDefault(i => i.Id == itemId);
             if (item2 != null)
             {
-                items.Remove(item2);
+                _items.Remove(item2);
                 return true;
             }
             return false;
 
         }
 
-        public List<Item> ConsultarEmenta()
+        public IReadOnlyList<Item> ConsultarEmenta()
         {
-            return items;
+            return _items.AsReadOnly();
+        }
+
+        public Item ObterItemPorId(int itemId)
+        {
+            return _items.FirstOrDefault(i => i.Id == itemId);
         }
     }
 

@@ -8,31 +8,17 @@ namespace Restaurante_EIM.Services
     public class PedidoService
     {
         private List<Pedido> _pedidos;
-        private List<Item> _ementa;
+        private Ementa _ementa;
         private int _proximoIdPedido = 1;
         private ReservaService _reservaService;
 
-        public PedidoService()
+        public PedidoService(Ementa ementa, ReservaService reservaService)
         {
             _pedidos = new List<Pedido>();
-            _ementa = new List<Item>();
-            InicializarEmenta();
-        }
-
-        public PedidoService(ReservaService reservaService)
-        {
-            _pedidos = new List<Pedido>();
-            _ementa = new List<Item>();
             _reservaService = reservaService;
-            InicializarEmenta();
+            _ementa = ementa;
         }
 
-        private void InicializarEmenta()
-        {
-            _ementa.Add(new Item("Sopa do Dia", 2.50));
-            _ementa.Add(new Item("Prato Principal", 10.00));
-            _ementa.Add(new Item("Refrigerante", 1.80));
-        }
 
         public bool RemoverItemDoPedido(int pedidoId, int itemId)
         {
@@ -67,7 +53,7 @@ namespace Restaurante_EIM.Services
         public bool AdicionarItemAoPedido(int pedidoId, int itemId, int quantidade)
         {
             Pedido pedido = _pedidos.FirstOrDefault(p => p.Id == pedidoId);
-            Item item = _ementa.FirstOrDefault(i => i.Id == itemId);
+            Item item = _ementa.ObterItemPorId(itemId);
 
             if (pedido != null && item != null && pedido.Estado == EstadoPedido.Aberto)
             {
@@ -115,11 +101,6 @@ namespace Restaurante_EIM.Services
         public Pedido ObterPedidoPorId(int pedidoId)
         {
             return _pedidos.FirstOrDefault(p => p.Id == pedidoId);
-        }
-
-        public List<Item> ObterEmenta()
-        {
-            return _ementa;
         }
 
         public List<Pedido> ListarPedidosPorEstado(EstadoPedido estado)

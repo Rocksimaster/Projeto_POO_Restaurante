@@ -8,13 +8,15 @@ namespace Restaurante_EIM
 {
     internal class Program
     {
-        private static UserService _userService = new UserService();
-        private static ReservaService _reservaService = new ReservaService();
-        private static PedidoService _pedidoService = new PedidoService();
-        private static Ementa _ementa = new Ementa();
+        private static UserService _userService;
+        private static ReservaService _reservaService;
+        private static Ementa _ementa;
+        private static PedidoService _pedidoService;
 
         static void Main(string[] args)
         {
+            InicializarSistema();
+
             bool aSair = false;
 
             while (!aSair)
@@ -45,6 +47,19 @@ namespace Restaurante_EIM
             }
 
             Console.WriteLine("Sistema encerrado. Obrigado e adeus!");
+        }
+
+        private static void InicializarSistema()
+        {
+            _userService = new UserService();
+            _reservaService = new ReservaService();
+
+            _ementa = new Ementa();
+            _ementa.AdicionarItemEmenta(new Item("Sopa do Dia", 2.50));
+            _ementa.AdicionarItemEmenta(new Item("Prato Principal", 10.00));
+            _ementa.AdicionarItemEmenta(new Item("Refrigerante", 1.80));
+
+            _pedidoService = new PedidoService(_ementa, _reservaService);
         }
 
         private static void ProcessarLogin()
@@ -78,7 +93,7 @@ namespace Restaurante_EIM
                     GestorMenu.MostrarMenu(_userService, _reservaService, _pedidoService, u as Gestor, _ementa);
                     break;
                 case "Empregado de Mesa":
-                    EmpregadoMenu.MostrarMenu(_pedidoService, _reservaService);
+                    EmpregadoMenu.MostrarMenu(_pedidoService, _reservaService, _ementa); //adicionar ementa
                     break;
                 case "Empregado de Balcão":
                     BalcaoMenu.MostrarMenu(_reservaService, _pedidoService);
